@@ -1,0 +1,73 @@
+*{
+    background-color: black;
+    color: aliceblue;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#select{
+    text-align: center;
+    margin:10px 30px 40px 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+table{
+    margin-top: 50px;
+}
+
+#answer, #pc_answer, #your_chose, #pc_chose{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+
+}
+#answer, #pc_answer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+}
+#result{
+    margin-top: 50px;
+    font-size: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: grey;
+}
+
+
+
+
+.container{
+    margin-top: 50px;
+    height: 100px;
+    
+}
+.container h1{
+    text-align: center;
+    height: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+}
+.buttons  {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons p button{
+    background-color: azure;
+
+    border-radius: 10px;
+
+    color: black;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.buttons p button:hover{
+    background-color:darkgrey;
+    font-size: 23px;
+    font-weight: 500;
+}
+button{
+    height: 150px;
+    width: 200px;
+}
