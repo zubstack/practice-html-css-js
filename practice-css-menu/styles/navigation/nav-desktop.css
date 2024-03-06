@@ -1,0 +1,41 @@
+@media all and (min-width: 960px) {
+  .menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item:not(.button) {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+    flex: 0.1;
+  }
+
+  .item a {
+    padding: 0;
+  }
+  .button {
+    order: 2;
+  }
+  .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    background: #111;
+  }
+  .toggle {
+    display: none;
+  }
+  .submenu-active {
+    border-radius: 0;
+  }
+}
+
+/* * {
+  border: 1px solid gray;
+} */

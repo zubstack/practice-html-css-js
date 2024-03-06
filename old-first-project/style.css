@@ -1,0 +1,232 @@
+@import url(./slides.css);
+@import url(./section.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-gray: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --turquesa: #3DEEF9;
+    --blanquito:#F7F7F7;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--text-input-field);
+}
+
+nav{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 60px;
+    box-shadow: 8px 10px gray;
+}
+
+i{
+    color: var(--blanquito);
+}
+
+span{
+    color: var(--turquesa);
+}
+
+.inactive{
+    display: none;
+}
+
+.nav-right .inactive{
+    display: none;
+}
+
+.inactive{
+    display: none;
+}
+
+#menu{
+    display: none;
+    padding: 15px 16px;
+    margin-right: 16px;
+    font-size: 30px;
+    border-radius: 3px;
+}
+
+#menu:hover{
+    background-color:#292929;
+}
+
+
+/* Logo Grupo Cabal.ec */
+.nav-left .logo{
+    color:var(--blanquito);
+    display: flex;
+    justify-content: space-around;
+    margin: 15px;
+    width: 230px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-left .logo img:nth-child(1){
+    width: 30px;
+}
+
+.nav-left .logo p:nth-child(1),
+.nav-left .logo p:nth-child(2){
+    padding-top: 3px;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+.nav-left .logo p > span:nth-child(1),
+.nav-left .logo p > span:nth-child(2){
+    color: var(--blanquito);
+    font-size: 25px;
+}
+
+/* Nav-mid */
+
+.nav-mid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width: 200px;
+}
+
+.nav-mid a i{
+    color: var(--blanquito);
+    font-size: 25px;
+}
+
+/* Nav-right */
+.nav-right{
+    align-content: center;
+}
+.nav-right ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 36px; 
+    
+    width: 550px;
+}
+.nav-right ul li{
+    padding: 21px 15px;
+    list-style: none;
+}
+
+.nav-right ul li a{
+    color:var(--blanquito);
+    text-decoration: none;
+    font-size: var(--md);
+    transition: 0.6s;
+}
+
+.nav-right ul li a:hover{
+    color: var(--very-light-gray);
+}
+
+.nav-right ul li:nth-child(4) a{
+    background: var(--turquesa);
+    color: #000000;
+    padding: 8px 20px;
+
+    border-radius: 4px;
+    letter-spacing: 1px;
+    font-weight: normal;
+
+    transition: 0.4s;
+}
+
+.nav-right ul li:nth-child(4) a:hover{
+    background-color:#00CCD9;
+}
+
+/* Mobile-menu */
+
+.nav-right .mobile-menu{
+    transition: .9s ease;
+}
+
+.nav-right .mobile-menu ul{
+    margin: 0;
+    padding: 0;
+
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
+    /*gap: 20px;*/    
+    background-color: #00CCD9;
+
+    position: absolute;
+    top: 70px;
+    right: 0;
+
+    text-align: center;
+}
+
+.nav-right .mobile-menu ul li{
+    padding: 0;
+    padding: 21px 15px;
+    list-style: none;
+    background-color: #C7C7C7;
+    width: 100%;
+    border-bottom: 1px solid gray;
+
+    
+}
+
+.nav-right > .mobile-menu ul li a{
+    padding: 0;
+    color:var(--blanquito);
+    text-decoration: none;
+    background-color: #C7C7C7;
+    font-weight: normal;
+    font-size: var(--md);
+    color: #000000;
+}
+
+/*----------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+@media (max-width: 640px){
+
+    .nav-mid,
+    .nav-right > ul:nth-child(1),
+    .nav-right > ul:nth-child(1) li:nth-child(1),
+    .nav-right > ul:nth-child(1) li:nth-child(2),
+    .nav-right > ul:nth-child(1) li:nth-child(3),
+    .nav-right > ul:nth-child(1) li:nth-child(4){
+        display: none;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+}
+
+@media (min-width: 640px){
+    .nav-right .mobile-menu{
+        display: none;
+    }
+    
+}

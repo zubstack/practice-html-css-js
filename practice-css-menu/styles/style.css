@@ -1,0 +1,48 @@
+@import url(/styles/navigation/nav-main.css);
+@import url(/styles/navigation/nav-tablet.css);
+
+html {
+  box-sizing: border-box;
+  background: #eeeeee;
+  font-family: "helvetica neue";
+  font-size: 20px;
+  font-weight: 200;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --green: rgb(100, 153, 20);
+  --bk-gray: rgb(233, 233, 233);
+  --bk-milk: rgb(255, 254, 240);
+  --border-milk: rgb(214, 214, 214);
+}
+
+span {
+  color: var(--green);
+}
+
+h1 {
+  max-height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  font-size: 18px;
+  color: var(--green);
+  font-family: "Quicksand", sans-serif;
+}

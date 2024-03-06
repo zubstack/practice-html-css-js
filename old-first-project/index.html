@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icon -->
+    <link rel="icon" href="./img/ico_fav_cabal.ico">
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500&family=Raleway:wght@100;300;500&display=swap" rel="stylesheet">
+    <!-- General styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Grupo Cabal Ecuador</title>
+</head>
+<body>
+
+    <!-- Navigator -->
+    <nav>
+        <div class="nav-left">
+            <div class="logo">
+                <img src="./img/ico_fav_cabal.ico" alt="">
+                <p><span>G</span>RUPO <span>C</span>ABAL.ec</p>
+            </div>
+        </div>
+        <div class="nav-mid">
+            <a href="https://www.facebook.com/search/top?q=grupo%20cabal.ecuador"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/cawal.ec/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/watch?v=0u7E-7ym_ew"><i class="fa-brands fa-youtube"></i></a>
+        </div>    
+        <div class="nav-right">
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Invierte con nosotros</a></li>
+            </ul>
+            <i id="menu" class="fa-solid fa-bars"></i>
+            <div class="mobile-menu inactive">
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li class="call-to-action"><a href="#">Invierte con nosotros</a></li>
+                </ul>
+            </div>
+        </div>     
+    </nav>
+
+    <!-- Slides -->
+    <div class="slideshow-container">
+            
+        <div class="mySlides fade" style="position: relative;">
+            <img src="./img/slides/main.jpg" style="width:100%">
+            <p>"Economía Colaborativa"</p>
+            <p>CONOCE EMPRENDEDORES <span>ECUATO</span><span>RIAN</span><span>OS</span></p>
+            <p class="call-to-action"><a href="#">Conoce más</a></p>
+        </div>
+        
+        <div class="mySlides fade">
+            <img src="./img/slides/workspace-black.jpg" style="width:100%">
+            <p class="quote">"Dá al mundo lo mejor de tí y el mundo te dará lo mejor de él"</p>
+            
+        </div>
+        
+        <div class="mySlides fade" style="position: relative;">
+            <img src="./img/slides/workspace-white.jpg" style="width:100%">
+            <div>
+                <p><span>6</span><br> SECTORES</p>              
+                    <ul>
+                        <li><span>SALUD</span></li>
+                        <li>FINANZAS</li>
+                        <li><span>INMOBILIARIO</span></li>
+                        <li>TECNOLOGIA</li>
+                        <li><span>EMPREDIMIENTO</span></li>
+                        <li>TURISMO</li>
+                    </ul>
+                </div>
+        </div>
+
+        <!-- Buttons -->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <!-- Dots -->
+        <div class="dot-container" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+    </div>
+
+    <!-- Section -->
+    <section>
+        <div class="section-container">
+            <img src="/img/icon_cabal.png" alt="logo cabalito">
+            <div>
+                <p>Grupo Cabal Ecuador</p>
+                <p>
+                    Nace con el concepto de construir <strong>economía colaborativa</strong> en el país.
+                    Con empresas sostenibles y sustentables que cumplan normativas y regulaciones , además ofrezcan productos y servicios con altos estándares de calidad. 
+                    Dentro de este concepto abarcamos <strong>seis sectores</strong>.
+                </p><br>
+                <div id="conoceMas"><a href="#">Conoce más</a></div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="interactive.js"></script>
+</html>

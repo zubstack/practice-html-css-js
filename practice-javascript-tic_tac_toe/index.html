@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <div class="nav-brand">
+          <h1># TIC TAC TOE</h1>
+        </div>
+        <div class="nav-menu">
+          <a
+            class="button__link"
+            href="https://github.com/lobato-code/practice-javascript-tic_tac_toe"
+          >
+            <i class="fa fa-github" style="font-size: 30px"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section id="main__container">
+      <div id="turn">Turn: <span id="turn__view">PLAYER 0</span></div>
+      <div class="game-container">
+        <div id="A1" class="game-box" data-index="0"></div>
+        <div id="A2" class="game-box" data-index="1"></div>
+        <div id="A3" class="game-box" data-index="2"></div>
+        <div id="B1" class="game-box" data-index="3"></div>
+        <div id="B2" class="game-box" data-index="4"></div>
+        <div id="B3" class="game-box" data-index="5"></div>
+        <div id="C1" class="game-box" data-index="6"></div>
+        <div id="C2" class="game-box" data-index="7"></div>
+        <div id="C3" class="game-box" data-index="8"></div>
+      </div>
+    </section>
+    <div id="scoreboard">
+      <h1>Scoreboard:</h1>
+      <p>PLAYER X: <span id="score__x">0</span></p>
+      <p>PLAYER O: <span id="score__o">0</span></p>
+    </div>
+    <div id="restart">
+      <p>GAME OVER</p>
+      <p id="winner__view">PLAYER <span id="winner"></span> WINS</p>
+      <button id="restart__button">Restart</button>
+    </div>
+  </body>
+  <script src="/main.js"></script>
+</html>

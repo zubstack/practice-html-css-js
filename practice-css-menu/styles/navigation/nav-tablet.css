@@ -1,0 +1,51 @@
+@media all and (min-width: 700px) {
+  .menu {
+    justify-content: center;
+  }
+  .brand {
+    flex: 1;
+  }
+
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+
+  .toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+  }
+
+  /*Style buttons*/
+
+  .menu li.button a {
+    padding: 10px 15px;
+    margin: 5px 0;
+  }
+  .button a {
+    background: var(--green);
+    border: 1px solid rgb(60, 68, 57);
+  }
+
+  .button.secondary {
+    border-bottom: 0;
+  }
+
+  .button.secondary a {
+    background: transparent;
+    border: 1px solid var(--green);
+  }
+  .button:not(.secondary) a:hover {
+    background-color: rgb(50, 158, 18);
+    border: 1px solid rgb(7, 29, 0);
+  }
+  .button.secondary a:hover {
+    color: var(--green);
+  }
+}
+
+/* * {
+  border: 1px solid gray;
+} */
