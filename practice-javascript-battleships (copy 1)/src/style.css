@@ -1,0 +1,39 @@
+* {
+  border: 1px solid;
+}
+
+h2 {
+  color: red;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid__container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.grid__container div {
+  background-color: lightblue;
+  border: 1px solid #929292;
+  padding: 20px;
+  text-align: center;
+}
+
+.--disactive {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.--active {
+  pointer-events: auto;
+  opacity: 1;
+}
