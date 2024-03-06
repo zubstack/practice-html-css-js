@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library | Moobooks</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;400&display=swap" rel="stylesheet">
+
+
+<body>
+
+    <header>
+      <nav class="nav-container">
+        <div class="nav-brand">
+            </i><i class="fa-solid fa-book"></i>        <p><span>M</span>oo<span>b</span>ooks</p>
+        </div>
+        <ul class="nav-menu-container">
+          <li><a href="#">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    
+    <form id="form-container" class="form-container" style="display: none;">
+      <div class="form-item">
+        <label for="book-title"> Book Title:</label>
+      <input type="text" id="title">
+      </div>
+      <div class="form-item">
+        <label for="book-author"> Book Author:</label>
+      <input type="text" id="author">
+      </div>
+      <div id="input-pages">
+        <label for="book-pages">Pages: </label>
+        <input type="number" id="pages">
+      </div>
+      <div class="form-item">
+        <label for="input-language">Language:</label>
+      <select id="language">
+        <option value="English">English</option>
+        <option value="Spanish">Spanish</option>
+      </select>
+      </div>
+      <div class="form-item" style="margin-top: 1rem; margin-bottom: 2rem;">
+        <p>Have you read it?</p>
+        <label class="switch">
+          <input id="read" type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="form-item">
+        <input type="submit" id="form-submit-btn" class="btn-primary" value="Add new book"/>
+      </div>
+      <button type="button" id="close-form-btn" class="btn-close" >✖</button>
+    </form>
+    <section >
+      <div id="library-container" class="cards-container">
+        Add a book
+      </div>
+        
+        
+      <button type="button" class="btn-primary" id="open-form-btn">+</button>
+    </section>
+  </body>
+  <script src="./main.js"></script>
+</html>

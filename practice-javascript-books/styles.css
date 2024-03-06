@@ -1,0 +1,161 @@
+@import url("./form.css");
+@import url("./slider.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+}
+
+:root {
+  --green: rgb(165, 119, 12);
+  --bk-gray: rgb(233, 233, 233);
+  --bk-milk: rgb(255, 254, 240);
+  --border-milk: rgb(214, 214, 214);
+}
+
+i {
+  font-size: 20px;
+}
+section {
+  padding-top: 20px;
+}
+
+span {
+  color: var(--green);
+}
+
+h1 {
+  max-height: 25px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  font-size: 18px;
+  color: var(--green);
+  font-family: "Quicksand", sans-serif;
+}
+
+.nav-container {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  font-family: "Quicksand", sans-serif;
+  border-bottom: 1px solid black;
+}
+
+.nav-brand {
+  width: 20vw;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 30px;
+}
+.nav-menu-container {
+  display: flex;
+}
+
+.nav-menu-container li {
+  padding: 1rem;
+  list-style: none;
+}
+
+.nav-menu-container li a {
+  text-decoration: none;
+  color: var(--green);
+}
+
+.cards-container {
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  grid-template-rows: min-content;
+  gap: 4px 10px;
+  height: 500px;
+  width: 50vw;
+  background-color: var(--bk-gray);
+  margin: auto;
+  overflow: auto;
+  scrollbar-base-color: gold;
+  font-family: arial;
+  border: 1px solid var(--border-milk);
+}
+
+.book-card {
+  background-color: var(--bk-milk);
+  border: 1px solid var(--border-milk);
+  border-radius: 15px;
+  display: flex;
+  height: 145px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.book-card-text {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  gap: 10px;
+}
+
+.book-card-text p {
+  font-size: 13px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+}
+
+.book-card-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-close:focus {
+  border: 1px solid transparent;
+  background-color: var(--bk-gray);
+  transition: 0.3s;
+}
+
+.btn-close {
+  background-color: transparent;
+  border-radius: 40%;
+  font-size: 20px;
+  transition: 0.3s;
+  border: 1px solid transparent;
+  width: 30px;
+  color: transparent;
+}
+
+.btn-close:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 0.3s;
+  color: var(--green);
+}
+
+.btn-primary {
+  width: 8rem;
+  height: 3rem;
+  font-family: "Quicksand", sans-serif;
+  background-color: var(--green);
+  border: 1px solid var(--bk-gray);
+  border-radius: 5px;
+  color: azure;
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+  display: block;
+  transition: 0.3s;
+  margin: auto;
+}
+
+.btn-primary:hover {
+  border: 1px solid #809c5f;
+  transition: 0.3s;
+}

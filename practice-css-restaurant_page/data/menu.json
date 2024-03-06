@@ -1,0 +1,72 @@
+[
+  {
+    "nombre": "Humitas Lojanas",
+    "descripcion": "Deliciosas humitas lojanas con queso, envueltas en hojas de maíz. Una explosión de sabores auténticos de la región andina.",
+    "acompaniados": "Vaso de jugo de taxo",
+    "precio_comercial": "$2.50",
+    "imagen": "https://i0.wp.com/www.cafesetentaysiete.com/wp-content/uploads/2021/11/Cafe-77-Humita.png?fit=570%2C480&ssl=1"
+  },
+  {
+    "nombre": "Humitas Manabitas",
+    "descripcion": "Humitas costeñas con toques marinos. Rellenas de mariscos frescos y envueltas en hojas de plátano. Una delicia que te transporta a la costa ecuatoriana.",
+    "acompaniados": "Bebida de coco fresco.",
+    "precio_comercial": "$3.00",
+    "imagen": "https://www.maricruzavalos.com/wp-content/uploads/2023/04/tamales-verdes-de-pollo.webp"
+  },
+  {
+    "nombre": "Quimbolitos",
+    "descripcion": "Quimbolitos cuencanos, pequeños bocados de dulzura con guayaba. Un postre tradicional envuelto en hojas de achira que conquista tu paladar.",
+    "acompaniados": "Taza de canelazo",
+    "precio_comercial": "$1.50",
+    "imagen": "https://i0.wp.com/www.cafesetentaysiete.com/wp-content/uploads/2021/11/Cafe-77-Humita.png?fit=570%2C480&ssl=1"
+  },
+  {
+    "nombre": "Tamales de Yuca",
+    "descripcion": "Tamales de yuca con un toque costeño. Textura suave y sabor inigualable. Una alternativa única a los tamales de maíz.",
+    "acompaniados": "Porción de bolones de verde",
+    "precio_comercial": "$2.75",
+    "imagen": "https://www.maricruzavalos.com/wp-content/uploads/2023/04/tamales-verdes-de-pollo.webp"
+  },
+  {
+    "nombre": "Tamales de Chancho",
+    "descripcion": "Sabrosos tamales con carne de chancho adobada, una delicia culinaria de la región costera de Esmeraldas.",
+    "acompaniados": "Bebida fresca de coco.",
+    "precio_comercial": "$2.50",
+    "imagen": "https://i0.wp.com/www.cafesetentaysiete.com/wp-content/uploads/2021/11/Cafe-77-Humita.png?fit=570%2C480&ssl=1"
+  },
+  {
+    "nombre": "Tamales de Pollo",
+    "descripcion": "Tamales de pollo con papas y aliños de la Sierra ecuatoriana. Un platillo reconfortante lleno de sabores locales.",
+    "acompaniados": "Taza de té de hierbas andinas.",
+    "precio_comercial": "$2.25",
+    "imagen": "https://www.maricruzavalos.com/wp-content/uploads/2023/04/tamales-verdes-de-pollo.webp"
+  },
+  {
+    "nombre": "Humitas de Quito",
+    "descripcion": "Humitas quiteñas con toques urbanos. Rellenas de choclo y queso, una deliciosa mezcla que refleja la diversidad de la capital ecuatoriana.",
+    "acompaniados": "Vaso de canelazo.",
+    "precio_comercial": "$2.75",
+    "imagen": "https://i0.wp.com/www.cafesetentaysiete.com/wp-content/uploads/2021/11/Cafe-77-Humita.png?fit=570%2C480&ssl=1"
+  },
+  {
+    "nombre": "Tamales de Fréjol",
+    "descripcion": "Tamales con un toque diferente: rellenos de fréjol. Una combinación única de sabores de la región andina.",
+    "acompaniados": "Bebida de morocho",
+    "precio_comercial": "$2.50",
+    "imagen": "https://www.maricruzavalos.com/wp-content/uploads/2023/04/tamales-verdes-de-pollo.webp"
+  },
+  {
+    "nombre": "Humitas de Choclo",
+    "descripcion": "Humitas ambateñas con choclo tierno y queso. Una explosión de sabores que caracterizan la gastronomía de Ambato.",
+    "acompaniados": "Jugo de naranjilla",
+    "precio_comercial": "$3.00",
+    "imagen": "https://i0.wp.com/www.cafesetentaysiete.com/wp-content/uploads/2021/11/Cafe-77-Humita.png?fit=570%2C480&ssl=1"
+  },
+  {
+    "nombre": "Tamales de Pescado",
+    "descripcion": "Innovadores tamales rellenos de pescado fresco. Una opción deliciosa que celebra la riqueza de los productos del mar en la región costera de Guayaquil.",
+    "acompaniados": "Bebida de coco fresco.",
+    "precio_comercial": "$3.50",
+    "imagen": "https://www.maricruzavalos.com/wp-content/uploads/2023/04/tamales-verdes-de-pollo.webp"
+  }
+]

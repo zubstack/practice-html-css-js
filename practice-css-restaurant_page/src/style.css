@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset de estilos para eliminar márgenes y rellenos predeterminados */
+body,
+h1,
+h2,
+h3,
+p,
+div,
+ul,
+ol,
+li,
+img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-light: #f8f8f8;
+  --background-dark: #333;
+  --text-light: #333;
+  --text-dark: #fff;
+  --nav-background-light: #444;
+  --nav-background-dark: #333;
+  --nav-text: #fff;
+  --link-color: #007bff;
+  --card-background: #fff;
+  --card-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --card-border: 1px solid #ddd;
+  --card-border-radius: 10px;
+  --card-padding: 20px;
+  --card-margin: 15px;
+  --card-flag-bg: rgb(255, 187, 62);
+  --bg-gray: rgb(180, 180, 180);
+}
+
+/* Resto de estilos... */
+
+/* Estilos generales */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-light);
+  color: var(--text-light);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  /* background-color: var(--nav-background-dark);
+   */
+  background-image: url("../assets/hero-bg.jpg");
+  background-size: cover;
+  color: var(--nav-text);
+  text-align: center;
+  padding: 1em;
+  height: 20vh;
+}
+
+#header__title {
+  margin-top: 1rem;
+  color: rgb(87, 87, 87);
+}
+nav {
+  background-color: var(--nav-background-light);
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+}
+
+nav button {
+  background-color: #444;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 1rem;
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+nav button:hover {
+  background-color: #333;
+}
+
+section {
+  margin: 20px;
+  text-align: center;
+  min-height: 70vh;
+}
+
+.section__title {
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: 30px;
+}
+
+/* Estilos de platillos (dish) */
+.cards__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  justify-content: center;
+  width: 40%;
+  margin: auto;
+  background: var(--card-flag-bg);
+}
+
+.dish__card {
+  background-color: var(--card-background);
+  box-shadow: var(--card-shadow);
+  border: var(--card-border);
+  border-radius: var(--card-border-radius);
+  margin: var(--card-margin);
+  width: 300px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.dish__card:hover {
+  transform: scale(1.05);
+}
+
+.dish__card img {
+  width: 100%;
+  height: auto;
+  border-bottom: var(--card-border);
+}
+
+.dish__info {
+  padding: var(--card-padding);
+}
+.dish__description {
+  color: var(--text-light);
+  font-size: 14px;
+}
+.dish__image {
+  max-height: 270px;
+}
+
+.home__img {
+  margin: 2rem 0;
+  border-radius: 24px;
+  width: 300px;
+  height: 400px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: var(--text-light);
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.price {
+  font-weight: bold;
+  color: #008000;
+}
+
+/* Estilos de footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  /* position: fixed;
+  bottom: 0; */
+  width: 100%;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Modo oscuro */
+:root.dark {
+  --background-light: #333;
+  --background-dark: #f8f8f8;
+  --text-light: #fff;
+  --text-dark: #333;
+  --nav-background-light: #333;
+  --nav-background-dark: #444;
+  --nav-text: #fff;
+}
+/* * {
+  border: 1px solid;
+} */
+
+#contact {
+  border-radius: 30px;
+  background-color: var(--bg-gray);
+  margin: 1rem auto;
+  width: 50vw;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
