@@ -1,0 +1,39 @@
+@import url(./navigation.css);
+@import url(./card.css);
+@import url(./form.css);
+@import url(./span_info.css);
+@import url(./galery.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+}
+
+.container {
+  padding: 4rem 4rem;
+}
+
+#ramdom-cats__section {
+  text-align: center;
+  background-color: rgb(209, 209, 209);
+}
+
+/* .gallery__container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+  } */
+
+.section h1 {
+  color: white;
+  font-family: "Noto Sans Mono", monospace;
+  font-size: 60px;
+}
+
+.containerF {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+
+@media (max-width: 800px) {
+}

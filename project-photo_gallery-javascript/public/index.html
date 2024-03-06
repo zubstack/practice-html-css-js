@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Michis App</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <!--  Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    
+<body>
+    
+    <header>
+       <div class="nav__container">
+        <div class="nav__logo">
+          <a href="index.html">
+            <i class="fa-solid fa-cat"></i>
+            <p>Michi's App</p>
+          </a>
+        </div>
+        <a class="nav__item" href="favourites.html">Favourites</a>
+        <a class="nav__item" href="upload.html">Upload</a>
+
+       </div>   
+    </header>
+    <div class="span-container off">
+        <span class="info error"></span>
+        <button id="close">x</button>
+    </div>
+    <section id="ramdom-cats__section" class="section container"> 
+        <h1>Discover Michis</h1>       
+        <div id="ramdom-cats__gallery" class="gallery__container">
+        </div>
+        
+    </section> 
+
+    
+
+    
+
+</body>
+<script src="../src/utils/showPreview.js"></script>
+<script>
+const API_URL_UPLOAD = "https://api.thecatapi.com/v1/images/upload";
+async function uploadMichiPhoto() {
+    event.preventDefault()
+
+  const form = document.getElementById("form-input");
+    const formData = new FormData(form);
+    console.log('form', formData)
+    console.log(formData.get("file"));
+
+  const res = await fetch(API_URL_UPLOAD, {
+    method: "POST",
+    headers: {
+      "X-API-KEY":
+        "live_4K25xEWsSo7fAvZp0l0uJ8prsp4qUzvVI1OEp4rbhBWVjBW7liJ0gBYxgMQX14Db",
+    },
+    body: formData,
+  });
+  const data = await res.json();
+
+  if (res.status !== 201) {
+    const data = await res.text();
+    spanContainer.classList.remove("off");
+    spanInfo.innerText = `Hubo un error ${res.status}: ${data}`;
+  } else {
+    console.log("Michi SUBIDO");
+    console.log({ data });
+    console.log(data.url);
+    saveFavourite(data.id);
+  }
+}
+</script>
+<script type="module" src="../src/main.js">
+</script>
+</html>

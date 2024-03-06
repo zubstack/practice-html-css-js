@@ -1,0 +1,44 @@
+.nav__container {
+  background-color: hsl(11, 0%, 10%);
+  color: rgb(255, 255, 255);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.nav__logo {
+  flex: 1;
+  cursor: pointer;
+}
+
+.nav__logo a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+}
+
+.nav__logo a i {
+  font-size: 40px;
+  color: white;
+}
+
+.nav__item {
+  color: white;
+  text-decoration: none;
+  margin-left: 2rem;
+  padding: 8px;
+  border-radius: 3px;
+  font-family: "Noto Sans Mono", monospace;
+}
+
+.nav__item:hover {
+  background-color: rgb(42, 42, 42);
+}

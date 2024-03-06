@@ -1,0 +1,24 @@
+.span-container {
+  width: 100%;
+  height: 30px;
+  background-color: hsl(0, 100%, 95%);
+  border: 1px solid brown;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  color: brown;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10px;
+}
+
+.span-container.off {
+  display: none;
+}
+
+.span-container button {
+  width: 30px;
+  justify-content: center;
+  background-color: hsl(0, 100%, 95%);
+  border: none;
+  color: red;
+}
